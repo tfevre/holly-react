@@ -13,8 +13,12 @@ Note: When I test the function directly on remix, it works (the fees are applied
 ## REACT PART
 
 I took a react template and tried to interact with my contract (MyToken)  
-Here is the current state :  
-![Alt text](src\assets\screenshot.png "current react web front-end")
+Here is the current state screenshots :  
+
+![front-end](src\assets\home.png "current react web front-end")  
+![connected metamask](src\assets\home.png "current react web front-end: connected metamask")  
+![see functions](src\assets\home.png "current react web front-end: see functions")  
+![result](src\assets\home.png "current react web front-end: result")
 
 
 # Holly
