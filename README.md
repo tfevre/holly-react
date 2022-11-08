@@ -13,12 +13,12 @@ Note: When I test the function 'transfer' directly on remix, it works (the fees 
 ## REACT PART
 
 I took a react template and tried to interact with my contract (MyToken)  
-Here is the current state screenshots :  
+Here below are multiple screenshots to show the current state :  
 
 ![front-end](src/assets/home.png "current react web front-end")  
 ![connected metamask](src/assets/connected_metamask.png "current react web front-end: connected metamask")  
 ![see functions](src/assets/screen_functions.png "current react web front-end: see functions")  
-![result](src/assets/not_blacklisted_result.png"current react web front-end: result")
+![result](src/assets/not_blacklisted_result.png "current react web front-end: result")
 
 
 # Holly
