@@ -17,6 +17,24 @@ export function NewsletterForm({ className, onSubmit, submitBtn }) {
     setEmail(event.target.value)
   }
 
+  const submit = async (e) => {
+    e.preventDefault();
+    const target = e.currentTarget;
+    const contractAddress = target.contractAddress.value;
+    if (isAddress(contractAddress)) {
+        try {
+            const ct = new ethers.Contract(contractAddress, smartContract.abi, signer);
+            const name = await ct.name();
+            const symbol = await ct.symbol();
+            const totalSupplyBn = await ct.totalSupply();
+            const totalSupply = ethers.utils.formatEther(totalSupplyBn);
+            setState({contractName: name, contractSymbol: symbol, contract: ct, totalSupply});
+        } catch (error) {
+            console.log(error);  
+        };
+    };
+  };
+
   return (
     <form
       onSubmit={handleSubmit}
@@ -27,13 +45,12 @@ export function NewsletterForm({ className, onSubmit, submitBtn }) {
           Email
         </label>
         <input
-          required
+          readOnly
           placeholder="0xlha1uh4ze....&hellip;"
           id="email"
           name="email"
           type="email"
           value={email}
-          onChange={handleChange}
           autoComplete="off"
           className="w-full rounded-sm border border-gray-300 bg-white px-4 py-3 m-2 text-sm text-gray-500 shadow-none"
         />
