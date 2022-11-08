@@ -11,7 +11,7 @@ export function Footer() {
           <NavLinks className="mb-6 inline-flex w-full flex-none justify-center lg:order-1 lg:mb-0 lg:flex lg:w-1/2 lg:justify-end" />
           <SocialLinks className="mb-6 inline-flex w-full flex-none justify-center lg:flex lg:justify-end" />
           <div className="mb-6 inline-flex w-full flex-none justify-center lg:w-1/2 lg:justify-start">
-            &copy; 2018 Holly, all rights reserved
+            &copy; 2022 Metadev3, all rights reserved
           </div>
         </div>
       </div>

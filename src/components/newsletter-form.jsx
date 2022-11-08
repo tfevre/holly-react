@@ -28,7 +28,7 @@ export function NewsletterForm({ className, onSubmit, submitBtn }) {
         </label>
         <input
           required
-          placeholder="Your best email&hellip;"
+          placeholder="0xlha1uh4ze....&hellip;"
           id="email"
           name="email"
           type="email"

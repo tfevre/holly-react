@@ -56,7 +56,7 @@ export function Hero({ title, content, illustration }) {
             <div ref={(el) => (scrollRevealRef.current[2] = el)}>
               <NewsletterForm
                 className="m-0 mt-8 max-w-md md:flex"
-                submitBtn="Get early access"
+                submitBtn="Add Blacklist"
                 onSubmit={onNewsletterSubmit}
               />
             </div>
